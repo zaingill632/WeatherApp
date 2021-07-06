@@ -28,23 +28,7 @@
             </div>
         </main>
     </div>
-
-    <script>
-    let autocomplete;
-    function initAutocomplete() {
-        autocomplete = new google.maps.places.Autocomplete(
-            document.querySelector('.searchbox'),
-            {
-                types: ['establishment'],
-                componentRestrictions: {'country': ['AU']},
-                fields: ['place_id', 'geometry', 'name']
-            });
-    }
-    </script>
-    <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK61QLeJiI4G7V2ipuXhUsMXK8G35iSSg&libraries=places&callback=initAutocomplete">
-    </script>
-
+    
     <script src="app.js"></script>
 </body>
 </html>
